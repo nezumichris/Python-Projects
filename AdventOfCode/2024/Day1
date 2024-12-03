@@ -1,8 +1,8 @@
-alist = []
-blist = []
-with open(r'C:\AdventofCode.txt', 'r') as file:
+with open(r'C:\Users\Nezum\Downloads\AdventofCodeDay1.txt', 'r') as file:
+    alist = [] #initialize list
+    blist = []
     for line in file:
-        a, b = map(int, line.split())
+        a, b = map(int, line.split()) 
         alist.append(a)
         blist.append(b)
 
@@ -18,5 +18,22 @@ while i < len(alist):
     z = abs(x - y)
     m += z
     i += 1
-print(m)
-        #print(f"a = {a}, b = {b}")
+
+aDict = list(dict.fromkeys(alist))
+#print(aDict)
+
+i = 0
+sumStuff = 0 
+while i < len(alist):
+    x = alist[i]
+    y = blist.count(x)
+    multStuff = x * y
+    print(x,y)
+    print(multStuff)
+    sumStuff += multStuff 
+    i += 1
+print(sumStuff)
+
+#AListVal = alist[0]
+#print(blist.count(AListVal))
+
