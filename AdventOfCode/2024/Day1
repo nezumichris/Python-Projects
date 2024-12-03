@@ -1,0 +1,22 @@
+alist = []
+blist = []
+with open(r'C:\AdventofCode.txt', 'r') as file:
+    for line in file:
+        a, b = map(int, line.split())
+        alist.append(a)
+        blist.append(b)
+
+alist.sort() 
+blist.sort()
+
+i = 0
+m = 0
+
+while i < len(alist):
+    x = alist[i]
+    y = blist[i]
+    z = abs(x - y)
+    m += z
+    i += 1
+print(m)
+        #print(f"a = {a}, b = {b}")
