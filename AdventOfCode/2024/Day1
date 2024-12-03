@@ -1,4 +1,4 @@
-with open(r'C:\Users\Nezum\Downloads\AdventofCodeDay1.txt', 'r') as file:
+with open(r'C:\text', 'r') as file:
     alist = [] #initialize list
     blist = []
     for line in file:
