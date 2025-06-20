@@ -1,0 +1,12 @@
+print('Input your name.  No numbers!')
+myName = input()
+while True:#Will reactivate the loop until a valid entry is found
+    myAge = input('Input your age (whole numbers only): ')
+    if myAge.isdigit():
+        break
+    else:
+        print('Please enter a valid number for your age.')
+print ('It is good to see you, ' + myName)
+print('The length of your name is:')
+print(len(myName))
+print('I am ' + myAge + ' years old')
